@@ -84,7 +84,7 @@ const galaxyParameters = {
   outsideColor: new THREE.Color(0x48b8b8),
 };
 
-const defaultHeartImages = Array.from({ length: 2 }, (_, i) => `images/img${i + 1}.jpg`);
+const defaultHeartImages = Array.from({ length: 24 }, (_, i) => `images/img${i + 1}.jpg`);
 
 const heartImages = [
   ...(window.dataCCD?.data?.heartImages || []),
@@ -99,9 +99,9 @@ const numGroups = heartImages.length;
 // Mật độ điểm khi chỉ có 1 ảnh (cao nhất)
 const maxDensity = 50000;
 // Mật độ điểm khi có 10 ảnh trở lên (thấp nhất)
-const minDensity = 2000;
+const minDensity = 10000;
 // Số lượng ảnh tối đa mà chúng ta quan tâm để điều chỉnh
-const maxGroupsForScale = 14;
+const maxGroupsForScale = 24;
 
 let pointsPerGroup;
 
@@ -611,10 +611,10 @@ scene.add(planet);
 
 // ---- TẠO CÁC VÒNG CHỮ QUAY QUANH HÀNH TINH ----
 const ringTexts = [
-  'Việt Nam',
-  "Cao Chung Đạt",
-  "Nguyễn Ngọc Yến Nhi",
-  "20/03/2005",
+  'Happy Wedding',
+  "Bùi Đức Anh",
+  "Bùi Thị Trà Giang",
+  "02/07/2025",
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
