@@ -2,7 +2,7 @@
   "name": "stellar-bloom-wedding",
   "version": "1.0.0",
   "description": "A 3D wedding invitation with Three.js galaxy visualization",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
     "build": "echo 'Build complete - static files ready'",
     "dev": "npx serve -s . -l 8000",
