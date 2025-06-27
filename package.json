@@ -1,0 +1,23 @@
+{
+  "name": "stellar-bloom-wedding",
+  "version": "1.0.0",
+  "description": "A 3D wedding invitation with Three.js galaxy visualization",
+  "main": "script.js",
+  "scripts": {
+    "build": "echo 'Build complete - static files ready'",
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "dependencies": {
+    "three": "^0.152.2"
+  },
+  "keywords": [
+    "threejs",
+    "3d",
+    "wedding",
+    "galaxy",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT"
+}
